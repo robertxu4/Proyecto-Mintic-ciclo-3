@@ -1,0 +1,4 @@
+servlet\PruebaServlet.class
+beans\Usuario.class
+beans\Producto.class
+beans\Pedido.class
