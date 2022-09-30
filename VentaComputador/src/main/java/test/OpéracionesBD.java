@@ -8,9 +8,7 @@ import java.sql.Statement;
 
 public class OpéracionesBD {
         public static void main(String[] args) {
-     actualizarProductos(1, " computadores gamer");
      listarProductos();
-     
     }
     
     public static void actualizarProductos(int id_producto, String marca){

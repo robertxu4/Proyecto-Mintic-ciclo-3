@@ -3,30 +3,30 @@ package beans;
 
 
 public class Usuario {
-    private String usuario;
+    private String username;
     private String contrasena;
-    private String nombres;
+    private String nombre;
     private String apellidos;
     private String email;
-    private int telefono;
     private double saldo;
+    private int telefono;
 
-    public Usuario(String usuario, String contrasena, String nombres, String apellidos, String email, int telefono, double saldo) {
-        this.usuario = usuario;
+    public Usuario(String username, String contrasena, String nombre, String apellidos, String email, double saldo, int telefono) {
+        this.username = username;
         this.contrasena = contrasena;
-        this.nombres = nombres;
+        this.nombre = nombre;
         this.apellidos = apellidos;
         this.email = email;
-        this.telefono = telefono;
         this.saldo = saldo;
+        this.telefono = telefono;
     }
 
-    public String getUsuario() {
-        return usuario;
+    public String getUsername() {
+        return username;
     }
 
-    public void setUsuario(String usuario) {
-        this.usuario = usuario;
+    public void setUsername(String username) {
+        this.username = username;
     }
 
     public String getContrasena() {
@@ -37,12 +37,12 @@ public class Usuario {
         this.contrasena = contrasena;
     }
 
-    public String getNombres() {
-        return nombres;
+    public String getNombre() {
+        return nombre;
     }
 
-    public void setNombres(String nombres) {
-        this.nombres = nombres;
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
     }
 
     public String getApellidos() {
@@ -61,14 +61,6 @@ public class Usuario {
         this.email = email;
     }
 
-    public int getTelefono() {
-        return telefono;
-    }
-
-    public void setTelefono(int telefono) {
-        this.telefono = telefono;
-    }
-
     public double getSaldo() {
         return saldo;
     }
@@ -77,13 +69,24 @@ public class Usuario {
         this.saldo = saldo;
     }
 
+    public int getTelefono() {
+        return telefono;
+    }
+
+    public void setTelefono(int telefono) {
+        this.telefono = telefono;
+    }
+
     @Override
     public String toString() {
-        return "Usuario{" + "usuario=" + usuario + ", contrasena=" + contrasena + ", nombres=" + nombres + ", apellidos=" + apellidos + ", email=" + email + ", telefono=" + telefono + ", saldo=" + saldo + '}';
+        return "Usuario{" + "username=" + username + ", contrasena=" + contrasena + ", nombre=" + nombre + ", apellidos=" + apellidos + ", email=" + email + ", saldo=" + saldo + ", telefono=" + telefono + '}';
     }
+
+
+
     
     
-    
+   
     
     
 }
